@@ -16,16 +16,17 @@
 
 }
 .logo img{
-    width: 45%;
+    width: 70%;
     /* border: 3px solid white; */
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    padding: -1px;
 
 }
 
 .navbar{
     display: flex;
-    background: rgba(0, 00, 0, 0.7) url(IMG/bg.jpg);
-    background-color:black;
+    /* background: rgba(0, 00, 0, 0.7) url(../chin.jpg); */
+    background-color:white;
     justify-items: center;
     align-items: center;
     position: sticky;
@@ -48,7 +49,7 @@
 
 .nav-list li a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     font-family: "Proxima Nova Condensed","Proxima Nova Condensed Fallback",sans-serif;
     font-weight: bold;
@@ -58,6 +59,7 @@
 .nav-list li a:hover{
     text-decoration: none;
     color: grey;
+    background-color: solid white;
 }
 
 .rightNav{
@@ -77,10 +79,19 @@ border-radius: 9px;
 
 
 .background{
-    background: rgba(0, 0, 0, 0.7) url('IMG/bg.jpg');
+    background:  url('../IMG/chin.jpg');
+  
+    /* background-color: black; */
     background-size: cover;
     background-blend-mode: darken;
 }
+
+.background-navbar{
+    /* background-image: url(../IMG/); */
+    background-color: white;
+    height: 70px;
+}
+
 
 .firstSection{
     height: 100vh;
@@ -121,6 +132,7 @@ border-radius: 9px;
 .text-big{
     
     font-size: 41px;
+    
 }
 
 .text-small{
@@ -130,14 +142,21 @@ border-radius: 9px;
 .btn{
     padding: 8px 30px;
     margin: 7px 3px;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 8px;
-    background: none;
-    color: white;
+    background: solid white; 
+    color: black;
     cursor: pointer;
     /* font-family: 'Pacifico', cursive; */
 
 }
+.btn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+}
+
+
 .btn-sm{
     padding: 6px 10px;
     vertical-align: middle;
@@ -241,6 +260,7 @@ border-radius: 9px;
         flex-direction: column;
         transition: all 0.5s ease-out;
         height: 500px;
+        
     }
     .rightNav{
         text-align: center;
@@ -258,6 +278,7 @@ border-radius: 9px;
     }
     .h-nav-resp{
         height: 72px;
+    
 
     }
     .v-class-resp{
